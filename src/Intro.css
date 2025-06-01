@@ -1,0 +1,319 @@
+/* General Styling */
+.intro-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+/* Light and Dark Mode Styling */
+.light {
+  background-color: #f5f5f5; /* Light mode background */
+  color: black; /* Light mode text color */
+}
+
+.dark {
+  background-color: #001f3f; /* Dark blue background */
+  color: #fafafa; /* Light text color */
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  margin: 10px 0;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic img {
+  width: 30vw; /* Adjust width for mobile responsiveness */
+  height: 30vw; /* Maintain height equal to width for a perfect circle */
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.introduction {
+  margin-top: 10px;
+}
+
+/* Headings */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Section Styles */
+.skills-section,
+.projects-section,
+.experience-section,
+.hobbies-section,
+.qualification-container,
+.contact-section {
+  margin-bottom: 30px;
+}
+
+/* Skills Section */
+.skills-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-section {
+  margin: 20px 0;
+}
+
+.skill-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-icon {
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.open {
+  transform: rotate(180deg); /* Rotate icon when open */
+}
+
+.skill-details {
+  margin-left: 20px;
+  padding: 5px 0;
+}
+
+/* Art Section */
+.toggle-art-button,
+.resume-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.toggle-art-button:hover,
+.resume-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.art-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.art-image {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+
+/* Contact Info */
+.contact-info {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .profile-pic img {
+    width: 120px;
+  }
+
+  .skill-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .art-image {
+    width: 80px;
+  }
+
+  .contact-info p {
+    font-size: 12px;
+  }
+}
+
+/* Tab Navigation for Qualification */
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-navigation button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgray;
+  transition: background-color 0.3s;
+}
+
+.tab-navigation button.active-tab {
+  background-color: #0077b5;
+  color: white;
+}
+
+.tab-navigation button:hover {
+  background-color: #005f85;
+}
+
+/* Qualification Section */
+.qualification-container {
+  margin-top: 30px;
+}
+
+.qualification-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.qualification-tabs button {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+.qualification-tabs button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.qualification-tabs button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.qualification-content {
+  position: relative;
+}
+
+.qualification-box {
+  border: 1px solid #007bff;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  transition: transform 0.5s ease-in-out;
+}
+
+.qualification-box h2 {
+  color: #007bff;
+}
+
+/* Light and Dark Mode Qualification Styling */
+.light .qualification-box {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark .qualification-box {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Projects, Experience, Hobbies, and Contact Section with Border */
+.projects-section,
+.experience-section,
+.hobbies-section,
+.courses-section,
+.contact-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.projects-section h1,
+.experience-section h1,
+.courses-section h1,
+.hobbies-section h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.projects-section p,
+.experience-section p,
+.courses-section p,
+.hobbies-section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Dark Mode for Specific Sections */
+.dark .projects-section,
+.dark .experience-section,
+.dark .hobbies-section,
+.dark .courses-section,
+.dark .contact-section {
+  background-color: #333; /* Dark background */
+  color: #fafafa; /* Light text color */
+  border-color: #444; /* Darker border color */
+}
+
+.light .projects-section,
+.light .experience-section,
+.light .hobbies-section,
+.light .courses-section,
+.light .contact-section {
+  background-color: #f9f9f9; /* Light background */
+  color: #000; /* Dark text color */
+  border-color: #ddd; /* Light border color */
+}
+
+/* Light and Dark Mode Styling for Text Content */
+.dark p {
+  color: #fafafa; /* Text color for paragraphs in dark mode */
+}
+
+.light p {
+  color: #000; /* Text color for paragraphs in light mode */
+}
+
